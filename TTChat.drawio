@@ -1,9 +1,108 @@
-<mxfile host="app.diagrams.net" modified="2023-12-17T00:38:26.580Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.11" etag="ht-39UL4mqecG__poLMT" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-17T01:34:30.198Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="WmOfkJutGLOylJR7vN99" version="22.1.11" type="github">
   <diagram name="Trang-1" id="iUiRBsldiwa9MTnrbCXM">
-    <mxGraphModel>
+    <mxGraphModel dx="1097" dy="1776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="OFikI2lp0wbrISSMHoKi-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-430" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-6" value="TTChat" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="-460" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-8" value="API gpt-3.5-turbo" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="-180" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.026;entryY=0.522;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OFikI2lp0wbrISSMHoKi-1" target="OFikI2lp0wbrISSMHoKi-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="-310" as="sourcePoint" />
+            <mxPoint x="290" y="-310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-21" value="Prompt(1)" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="OFikI2lp0wbrISSMHoKi-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="OFikI2lp0wbrISSMHoKi-8" target="OFikI2lp0wbrISSMHoKi-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="-310" as="sourcePoint" />
+            <mxPoint x="320" y="-310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="-340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-24" value="Yêu cầu list sp" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="OFikI2lp0wbrISSMHoKi-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-26" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="454" y="-690" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OFikI2lp0wbrISSMHoKi-6" target="OFikI2lp0wbrISSMHoKi-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="-570" as="sourcePoint" />
+            <mxPoint x="480" y="-570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-34" value="query(4)" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="OFikI2lp0wbrISSMHoKi-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.855;exitY=1;exitDx=0;exitDy=-4.35;exitPerimeter=0;" edge="1" parent="1" source="OFikI2lp0wbrISSMHoKi-26" target="OFikI2lp0wbrISSMHoKi-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="-540" as="sourcePoint" />
+            <mxPoint x="460" y="-590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="-530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-36" value="list sp(5)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OFikI2lp0wbrISSMHoKi-35">
+          <mxGeometry x="-0.0012" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="OFikI2lp0wbrISSMHoKi-8" target="OFikI2lp0wbrISSMHoKi-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="-260" as="sourcePoint" />
+            <mxPoint x="380" y="-260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-40" value="" style="shape=message;html=1;outlineConnect=0;" vertex="1" parent="OFikI2lp0wbrISSMHoKi-39">
+          <mxGeometry width="20" height="14" relative="1" as="geometry">
+            <mxPoint x="-10" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-41" value="(7)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="-296" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-42" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.688;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OFikI2lp0wbrISSMHoKi-6" target="OFikI2lp0wbrISSMHoKi-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="-360" as="sourcePoint" />
+            <mxPoint x="380" y="-360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="-280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-43" value="List sp(6)" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="OFikI2lp0wbrISSMHoKi-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OFikI2lp0wbrISSMHoKi-6" target="OFikI2lp0wbrISSMHoKi-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="-260" as="sourcePoint" />
+            <mxPoint x="380" y="-260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-46" value="" style="shape=message;html=1;outlineConnect=0;" vertex="1" parent="OFikI2lp0wbrISSMHoKi-45">
+          <mxGeometry width="20" height="14" relative="1" as="geometry">
+            <mxPoint x="-10" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-47" value="(2)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="441" y="-296" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OFikI2lp0wbrISSMHoKi-48" value="(3)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="-295" width="40" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
